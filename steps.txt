@@ -1,0 +1,6 @@
+1) Opening the mail web
+2) Getting the right email
+3) Entering the data
+4) Formality
+5) Confirmation
+6) Saving data
