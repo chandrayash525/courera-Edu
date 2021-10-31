@@ -32,6 +32,13 @@ def click(driver,css,time = 60):
         )
         element.click()
     except:
+def click(driver,css,time = 60):
+    try:
+        element = WebDriverWait(driver, time).until(
+            EC.element_to_be_clickable((By.CSS_SELECTOR , css))
+        )
+        element.click()
+    except:
         sleep(5)
         click(driver,css)
 # use to type in input box
@@ -75,6 +82,9 @@ if(not passWord):
         passWord += choice("""ABCDEFGHIJKMNOPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz1234567890~!@#$%^&*()_+-=`{}|[]\\:;<,.>/?""")
 print("All information is saved in file data.txt")
 input("Are your ready \n Press Enter")
+    print("+----------------------------------------------------------------+")
+    print("|     Canva premoum Education account                            |")
+    print("+----------------------------------------------------------------+")
 #=========================================================================================#
 #          Getting Edu email                                                              #
 #=========================================================================================#
@@ -114,6 +124,9 @@ type(courseraWebsite,"#password",passWord)  #entrin password
 click(courseraWebsite,"body > div._1widl7g > div > div > section > section > div:nth-child(2) > form > button") # Signup button
 # waiting of confirmation
 printC(3)
+    print("+----------------------------------------------------------------+")
+    print("|     Canva premoum Education account                            |")
+    print("+----------------------------------------------------------------+")
 
 
 # applyting to coursera education programm
